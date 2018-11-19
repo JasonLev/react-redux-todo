@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import NewTodoForm from './NewTodoForm';
-// import TodoList from '../containers/TodoList';
+import TodoList from './TodoList';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
           <h1>Todo App</h1>
         </header>
         <NewTodoForm />
-        {/*<TodoList />*/}
+        <TodoList />
       </div>
     );
   }
