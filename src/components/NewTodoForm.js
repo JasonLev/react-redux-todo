@@ -11,12 +11,13 @@ const NewTodoForm = ({ dispatch }) => {
       if (!input.value.trim()) {
         return
       }
-      dispatch(addTodo(input.value))
+      let batchTodos = input.value.split(',')
+      batchTodos.forEach(todo => dispatch(addTodo(todo.trim())))
       input.value = ''
     }}>
       <input ref={node => input = node} />
       <button type="submit">
-        Add Todo
+        Add
       </button>
     </form>
   )
