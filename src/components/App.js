@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 import NewTodoForm from './NewTodoForm';
-import TodoList from './TodoList';
+import VisibleList from '../containers/VisibleList';
+import DisplayFilter from './DisplayFilter';
 
 class App extends Component {
   render() {
@@ -10,8 +11,9 @@ class App extends Component {
         <header className="App-header">
           <h1>Todo App</h1>
         </header>
+        <DisplayFilter />
         <NewTodoForm />
-        <TodoList />
+        <VisibleList />
       </div>
     );
   }

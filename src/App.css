@@ -19,3 +19,17 @@ input {
   font-size: 2em;
   padding: 0.5em;
 }
+
+form {
+  margin: 1em 0;
+}
+
+li {
+  margin: 1.2em;
+}
+
+ul {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: initial;
+}
