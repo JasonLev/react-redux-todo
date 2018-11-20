@@ -1,6 +1,4 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { toggleTodo } from '../actions/todoActions'
 import Todo from './Todo'
 
 const TodoList = ({ todos, toggleTodo }) => (
@@ -14,15 +12,5 @@ const TodoList = ({ todos, toggleTodo }) => (
     )}
   </ul>
 )
-const mapStateToProps = state => ({
-  todos: state.todos
-})
 
-const mapDispatchToProps = dispatch => ({
-  toggleTodo: id => dispatch(toggleTodo(id))
-})
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TodoList)
+export default TodoList
