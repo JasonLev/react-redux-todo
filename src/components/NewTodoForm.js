@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addTodo } from '../actions/todoActions'
+import { addTodo, setVisibilityFilter, VisibilityFilters } from '../actions/todoActions'
 
 const NewTodoForm = ({ dispatch }) => {
   let input
@@ -13,6 +13,7 @@ const NewTodoForm = ({ dispatch }) => {
       }
       let batchTodos = input.value.split(',')
       batchTodos.forEach(todo => dispatch(addTodo(todo.trim())))
+      dispatch(setVisibilityFilter(VisibilityFilters.SHOW_ALL))
       input.value = ''
     }}>
       <input ref={node => input = node} />
