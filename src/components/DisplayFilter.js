@@ -14,6 +14,9 @@ const DisplayFilter = () => (
     <FilterButton filter={VisibilityFilters.SHOW_COMPLETED}>
       Completed
     </FilterButton>
+    <FilterButton filter={VisibilityFilters.SHOW_DELETED}>
+      Deleted
+    </FilterButton>
   </div>
 )
 
