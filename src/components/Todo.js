@@ -1,6 +1,11 @@
 import React from 'react'
 
-const Todo = ({ onClick, completed, text, id, onDelete }) => (
+const Todo = ({ onClick,
+                completed,
+                deleted,
+                text,
+                id,
+                onDelete }) => (
   <li>
     <input type="checkbox"
            onChange={onClick}
@@ -16,7 +21,7 @@ const Todo = ({ onClick, completed, text, id, onDelete }) => (
     >
       {text}
     </label>
-    <button className="delete" onClick={onDelete}>X</button>
+    {!deleted && <button className="delete" onClick={onDelete}>X</button>}
   </li>
 )
 
