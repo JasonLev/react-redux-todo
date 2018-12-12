@@ -26,6 +26,14 @@ form {
 
 li {
   margin: 1.2em;
+  box-shadow: 0 0 3px 1px;
+  padding: 1em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  position: relative;
 }
 
 ul {
@@ -35,12 +43,15 @@ ul {
   text-align: initial;
 }
 label {
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 button.delete {
-  border-radius: 50%;
+  border-radius: 20%;
   padding: 1em;
   background-color: grey;
-  margin: 0 0.5em;
   color: #fff;
+  align-self: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
